@@ -2,6 +2,13 @@
 
 ## Basic Usage
 
+Without the git-flow extensions:
+```
+git checkout develop
+git checkout -b feature_branch
+```
+
+When using the git-flow extension:
 ```
 $ git flow feature start test
 Switched to a new branch 'feature/test'
@@ -15,6 +22,13 @@ Now, start committing on your feature. When done, use:
      git flow feature finish test
 ```
 
+Without the git-flow extensions:
+```
+git checkout develop
+git merge test
+```
+
+When using the git-flow extension:
 ```
 git flow feature finish test
 ```
