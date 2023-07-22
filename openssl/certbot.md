@@ -157,3 +157,29 @@ $ crontab -e
 ```
 
 3. Save and close the file. All installed certificates will be automatically renewed and reloaded.
+
+## Install certificate
+
+```
+certbot install --cert-name ceightx.dev
+```
+
+## Either get and install your certificates...
+
+```
+$ sudo certbot --nginx
+```
+
+## Or, just get a certificate
+
+```
+$ sudo certbot certonly --nginx
+```
+
+## Test automatic renewal
+
+The Certbot packages on your system come with a cron job or systemd timer that will renew your certificates automatically before they expire. You will not need to run Certbot again, unless you change your configuration. You can test automatic renewal for your certificates by running this command:
+
+```
+$ sudo certbot renew --dry-run
+```

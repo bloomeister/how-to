@@ -1,10 +1,21 @@
 # npm
 
+## Update `nodejs` to latest stable version
+
+```
+npm cache clean -f
+npm install -g n
+n stable
+```
+
+> If `node --version` shows the old version then start a new shell, or reset the location hash with: `hash -r` (for `bash`, `zsh`, `ash`, `dash`, and `ksh`) [or] `rehash` (for `csh` and `tcsh`)
+
 ## TL;DR
-- Use `npm outdated` to discover dependencies that are out of date
-- Use `npm update` to perform safe dependency upgrades
-- Use `npm install <packagename>@latest` to upgrade to the latest major version of a package
-- Use `npx npm-check-updates -u` and `npm install` to upgrade all dependencies to their latest major versions
+
+-   Use `npm outdated` to discover dependencies that are out of date
+-   Use `npm update` to perform safe dependency upgrades
+-   Use `npm install <packagename>@latest` to upgrade to the latest major version of a package
+-   Use `npx npm-check-updates -u` and `npm install` to upgrade all dependencies to their latest major versions
 
 ## What does the `^` and `~` mean?
 

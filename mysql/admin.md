@@ -46,7 +46,7 @@ sudo mysql -u root
 
 mysql> USE mysql;
 mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
-mysql> FLUSH PRIVILEGES;
+mysql> FLUSH PRIVILEGES; 
 mysql> exit;
 
 sudo service mysql restart
@@ -61,7 +61,7 @@ mysql> USE mysql;
 mysql> CREATE USER 'YOUR_SYSTEM_USER'@'localhost' IDENTIFIED BY 'YOUR_PASSWD';
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'YOUR_SYSTEM_USER'@'localhost';
 mysql> UPDATE user SET plugin='auth_socket' WHERE User='YOUR_SYSTEM_USER';
-mysql> FLUSH PRIVILEGES;
+mysql> FLUSH PRIVILEGES;  
 mysql> exit;
 
 sudo service mysql restart
